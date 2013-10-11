@@ -10,7 +10,7 @@ public class ArrayShuffle {
 		
 		for(int i = 0; i < arrayLength; i++) {
 			
-			int randomNumber = RandomNumber.getRandom(0, (arrayLength-1));
+			int randomNumber = RandomNumber.get(0, (arrayLength-1));
 			T temporaryValue = array[randomNumber];
 			array[randomNumber] = array[i];
 			array[i] = temporaryValue;
